@@ -246,7 +246,10 @@ namespace GravityShift
             {
                 if (!player.IsGuest)
                 {
-                    mWorldSelect.Save();
+                    if (!Guide.IsTrialMode)
+                    {
+                        mWorldSelect.Save();
+                    }
                 }
             }
             
